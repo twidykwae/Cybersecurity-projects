@@ -117,7 +117,7 @@ sudo auditctl -w /home/codepath/project2-main/protected_files/website.js -p wa -
 - **Defense in Depth**: Multi-layered monitoring approach
 - **Continuous Monitoring**: Real-time security event detection
 - **Forensic Readiness**: Comprehensive audit trail maintenance
-- **Threat Intelligence**: Attack pattern recognition and attribution
+- **Threat Intelligesnce**: Attack pattern recognition and attribution
 
 ---
 
@@ -127,6 +127,7 @@ sudo auditctl -w /home/codepath/project2-main/protected_files/website.js -p wa -
 sudo auditctl -l                    # List active rules
 sudo systemctl status auditd        # Service health check
 sudo ausearch -x attack-a           # Search by executable name
+sudo ausearch -k precipitation_monitor | grep "exe=" 
 tail -f /var/log/audit/audit.log    # Real-time monitoring
 ```
 
