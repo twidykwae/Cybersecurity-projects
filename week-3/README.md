@@ -107,12 +107,6 @@ This project aligns with industry certifications and roles:
 
 ## Key Deliverables
 
-### Lab 3 Deliverables:
-- Functional Snort IDS configuration
-- Custom detection rules for ICMP and HTTPS traffic
-- Real-time attack detection capabilities
-- Rule validation and testing documentation
-
 ### Project 3 Deliverables:
 - Completed attack.sh script for automated directory traversal
 - Network traffic analysis of server.pcapng file
@@ -121,4 +115,4 @@ This project aligns with industry certifications and roles:
 
 ## Conclusion
 
-This comprehensive cybersecurity project demonstrates practical skills in network intrusion detection, attack simulation, and forensic investigation. The hands-on experience with industry-standard tools like Snort IDS and network analysis techniques provides essential foundation for cybersecurity professionals. The combination of defensive monitoring through intrusion detection and offensive security testing through directory traversal attacks showcases a well-rounded understanding of network security principles and practices.
+This cybersecurity project demonstrates skills in network intrusion detection, attack simulation, and forensic investigation. The experience with tools like Snort NDS and network analysis techniques provides essential foundation for cybersecurity.
