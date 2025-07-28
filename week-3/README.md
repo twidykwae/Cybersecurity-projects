@@ -1,6 +1,6 @@
 # Network Security & Intrusion Detection Systems
 
-*A comprehensive exploration of network intrusion detection and directory traversal attack analysis using industry-standard tools*
+An exploration of network intrusion detection and directory traversal attack analysis using industry-standard tools
 
 ## Project Overview
 
@@ -25,44 +25,7 @@ This repository demonstrates practical cybersecurity skills through hands-on net
 - **Bash Scripting**: Automation and attack simulation
 - **Vim**: Text editor for configuration and rule files
 
-## Lab Activities Completed
-
-### Lab 3: "That's Snort of a Lot of Rules" - Snort IDS Implementation
-
-**Objective**: Configure Snort for real-time network monitoring and create custom detection rules
-
-#### Implementation Process:
-
-**Environment Setup**
-- Installed Docker and pulled pytbull-ng testing framework
-- Configured containers for network attack simulation
-
-**Attack Simulation Framework**
-- Deployed pytbull-ng framework to generate 300+ test attacks
-- Configured victim and attacker containers for network traffic simulation
-- Monitored live attack patterns in real-time
-
-**Snort Configuration**
-- Configured system service for network interface optimization
-- Set up required directory structure for Snort rules and logs
-- Modified snort.lua configuration file to enable custom rules
-
-**Custom Rule Development**
-
-*ICMP Traffic Detection Rule:*
-- Implemented basic rule to detect ICMP traffic for testing purposes
-
-*HTTPS Traffic Blocking Rule:*
-- Created custom rule to block HTTPS traffic to Google.com
-- Tested rule effectiveness using Firefox browser
-
-#### Results Achieved:
-- Successfully detected and logged network intrusion attempts
-- Implemented custom rules for specific traffic patterns
-- Validated rule functionality through live testing
-- Real-time monitoring of network communications
-
-### Project 3: "Off Limits" - Directory Traversal Attack Investigation
+### Project: Directory Traversal Attack Investigation
 
 **Scenario**: Forensic investigation of Fairly Oddparents Corp. suspected of financial fraud
 
@@ -143,6 +106,12 @@ This project aligns with industry certifications and roles:
 - **SOC Analyst**: Real-time threat detection and network monitoring
 
 ## Key Deliverables
+
+### Lab 3 Deliverables:
+- Functional Snort IDS configuration
+- Custom detection rules for ICMP and HTTPS traffic
+- Real-time attack detection capabilities
+- Rule validation and testing documentation
 
 ### Project 3 Deliverables:
 - Completed attack.sh script for automated directory traversal
