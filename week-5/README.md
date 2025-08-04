@@ -6,7 +6,6 @@ Thisproject  demonstrates Security Information and Event Management (SIEM) analy
 
 ## Project Overview
 
-**Course:** CodePath CYB102 - Cybersecurity Fundamentals  
 **Focus:** SIEM Operations and Threat Detection  
 **Platform:** Splunk Enterprise  
 **Investigation Types:** Data analytics and security incident response
@@ -16,14 +15,13 @@ Thisproject  demonstrates Security Information and Event Management (SIEM) analy
 - Multi-source log correlation and threat attribution  
 - IOC (Indicators of Compromise) based threat hunting
 - Behavioral analysis and anomaly detection
-- Forensic timeline reconstruction
 
 ---
 
 ## Investigation 1: Netflix Content Analytics
 
 ### Objective
-Demonstrate structured data analysis capabilities using Splunk to extract business intelligence from entertainment metadata.
+Demonstrate structured data analysis capabilities using Splunk.
 
 **Dataset:** `index=main host=Netflix`
 
@@ -62,14 +60,14 @@ Demonstrate structured data analysis capabilities using Splunk to extract busine
 ### Investigation Timeline & Attribution
 
 #### Phase 1: Initial Threat Detection
-**Challenge 11:** What was the IP address that uploaded the malware?
+**Challenge:** What was the IP address that uploaded the malware?
 ```spl
 host="BlueCoatProxy01" OR host="failedlogins64" OR host="uploadedhashes" OR host="webserver02" EvilScript.exe
 ```
 **Critical Finding:** Source IP `192.168.1.10` identified as upload origin
 
 #### Phase 2: Attack Pattern Analysis  
-**Challenge 12:** What usernames did that IP address try to login as? Which one uploaded the file?
+**Challenge:** What usernames did that IP address try to login as? Which one uploaded the file?
 ```spl
 host="BlueCoatProxy01" OR host="failedlogins64" OR host="uploadedhashes" OR host="webserver02" 192.168.1.10
 ```
@@ -79,21 +77,12 @@ host="BlueCoatProxy01" OR host="failedlogins64" OR host="uploadedhashes" OR host
 - `ABurke` (Successful compromise vector - uploaded the file)
 
 #### Phase 3: Technical Fingerprinting
-**Challenge 13:** What was the User Agent String of the attacker?
+**Challenge:** What was the User Agent String of the attacker?
 ```spl
 host="BlueCoatProxy01" OR host="failedlogins64" OR host="uploadedhashes" OR host="webserver02" 192.168.1.10
 ```
 *Note: Analyzed user_agent field from results*
 **Technical Attribution:** `Opera/75.0.3969.218` browser fingerprint
-
-### Threat Assessment Summary
-
-| **Attack Component** | **Intelligence Gathered** | **Security Significance** |
-|---------------------|---------------------------|---------------------------|
-| **Source Network** | 192.168.1.10 | Internal network compromise |
-| **Credential Target** | ABurke account | Privilege escalation vector |
-| **Attack Methodology** | Brute force → Upload | Multi-stage attack chain |
-| **Technical Profile** | Opera/75.0.3969.218 | Attribution & tracking capability |
 
 ---
 
@@ -180,12 +169,4 @@ host="BlueCoatProxy01" OR host="failedlogins64" OR host="uploadedhashes" OR host
 
 ## Conclusion
 
-This project successfully demonstrated core SIEM analyst competencies through practical application of Splunk Enterprise in both business analytics and security operations contexts. The investigation showcased critical cybersecurity skills including threat detection, incident response, and forensic analysis while highlighting the strategic importance of centralized logging and correlation analysis in modern security operations.
-
-The successful attribution of malicious activity to specific threat actors through multi-source log correlation exemplifies the analytical rigor required in professional SOC environments, preparing for real-world cybersecurity challenges.
-
-**Key Professional Takeaways:**
-- SIEM platforms enable comprehensive visibility across enterprise environments
-- Effective threat hunting requires systematic query construction and correlation techniques  
-- Successful incident response depends on structured investigation methodologies
-- Technical attribution through log analysis provides actionable intelligence for security teams
+This project demonstrated core SIEM analyst competencies through application of Splunk Enterprise in both business analytics and security operations contexts. The investigation shows critical cybersecurity skills including threat detection, incident response, and forensic analysis while highlighting the strategic importance of centralized logging and correlation analysis in modern security operations.
