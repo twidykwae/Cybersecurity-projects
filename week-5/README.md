@@ -1,4 +1,4 @@
-# CodePath CYB102 Project 5: SIEM Security Analysis
+# SIEM Security Analysis
 
 ## Executive Summary
 
